@@ -1,0 +1,6 @@
+{
+  "name": "Imageshapfinder",
+  "tagline": "Finding object's location in image with different shap (rectangle, circle, triangle, etc.)",
+  "body": "# ImageShapFinder\r\n\r\n# TEST\r\n\r\nFinding object's location in image with different shap (rectangle, circle, triangle, etc.)\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
