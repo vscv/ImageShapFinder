@@ -1,0 +1,61 @@
+
+
+
+常見問題：
+當執行「$ git remote add origin...」時，出現下列錯誤：
+代碼: 選擇全部
+fatal: remote origin already exists.
+
+解決方法：
+先執行底下指令刪除，再重新執行「$ git remote add origin...」。
+代碼: 選擇全部
+$ git remote rm origin
+
+
+git status
+
+這會列出工作目錄下面，所有的檔案。
+
+教練： 說說你自己愛用的 git 命令有那些。
+
+接著輸入
+
+git add .
+
+把目錄下所有的檔案與變動加到 staging 區域。
+
+然後輸入
+
+git commit -m "first commit"
+
+這會把剛剛加入的所有檔案提交（Commit）出去，並附加一則訊息 "first commit"
+
+再來輸入
+
+git remote add origin https://github.com/username/rails-girls.git
+
+妳的 GitHub Repository 頁面會列出 repository 的 URL，去那邊複製下來，因為用手打很辛苦。可以在 URL 旁邊的剪貼板按鈕，按一下複製 URL。
+
+這行命令會建立一個叫做 origin 的 remote （或稱為 connection），指向妳先前在 GitHub 網站上所建立的 GitHub Repository。
+
+接著輸入
+
+git push -u origin master
+
+這會把妳剛剛的提交（commit）推送到 GitHub 上的 "master" 分支。
+
+恭喜妳！妳的 app 現在放到 GitHub 上了！用剛剛複製的 URL（去掉 .git）看看妳放上去的程式碼吧。
+
+果妳想繼續修改妳的 APP，並更新到 GitHub 上，妳只會需要用到這三個命令：
+git add .
+
+git commit -m "type your commit message here"
+
+git push origin master
+
+要檢查 Git 是不是已經設定好了，輸入 git config --list
+
+
+
+
+
